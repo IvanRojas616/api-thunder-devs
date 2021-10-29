@@ -7,7 +7,8 @@
     "start": "node dist/index.js",
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d dist --source-maps",
-    "serve": "node dist/index.js"
+    "serve": "node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "author": "Thunder Devs",
   "license": "MIT",
@@ -30,6 +31,7 @@
     "@babel/core": "^7.15.8",
     "@babel/node": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "jest": "^27.3.1",
     "nodemon": "^2.0.13"
   },
   "packageManager": "yarn@3.1.0"

@@ -8,7 +8,7 @@ import authStateUser from './middlewares/authUserState';
 const app = express();
 app.use(express.json());
 //settings
-const port = 4304;
+const port = proccess.env.PORT || 4304;
 app.set("port", port);
 
 //middlewares

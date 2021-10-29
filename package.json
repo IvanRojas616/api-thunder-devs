@@ -1,0 +1,36 @@
+{
+  "name": "back-thunder-devs",
+  "version": "1.0.0",
+  "description": "Back-end with API REST and connection with cloud mongo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist --source-maps",
+    "serve": "node dist/index.js"
+  },
+  "author": "Thunder Devs",
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "express-jwt-authz": "^2.4.1",
+    "jwks-rsa": "^2.0.5",
+    "jwt-decode": "^3.1.2",
+    "mongodb": "^4.1.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "nodemon": "^2.0.13"
+  },
+  "packageManager": "yarn@3.1.0"
+}

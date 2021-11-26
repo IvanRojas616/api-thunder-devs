@@ -1,6 +1,6 @@
 //here we go to test
 
-import queryAllUsers from "./controllers/users/usersController";
+import { queryAllUsers } from "./controllers/users/usersController";
 import connectionDB from "./db/connectionDB";
 
 test('should to return one or more users', () => {

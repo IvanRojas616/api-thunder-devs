@@ -44,4 +44,6 @@ app.use('/api/v1/products',require('./routes/products/products').default);
 
 app.use('/api/v1/users',require('./routes/users/users').default);
 
+
+
 export default app; 
